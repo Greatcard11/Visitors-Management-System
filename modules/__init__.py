@@ -1,0 +1,1 @@
+# Smart VMS modules package
