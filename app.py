@@ -173,8 +173,8 @@ def render_sidebar():
         st.markdown(f"""
         <div style="text-align:center;padding:16px 0 8px">
             {LOGO_SVG}
-            <div style="font-size:.75rem;font-weight:700;color:white;margin-top:8px;
-                        letter-spacing:.02em">Cardstel</div>
+            <div style="font-size:.100rem;font-weight:700;color:white;margin-top:8px;
+                        letter-spacing:.02em">CARDSTEL</div>
             <div style="font-size:.6rem;color:#94a3b8;letter-spacing:.08em">
                 VISITOR MANAGEMENT SYSTEM
             </div>
@@ -227,7 +227,7 @@ def render_sidebar():
         st.session_state.dark_mode = dm
         st.markdown("""
         <div style="text-align:center;font-size:.63rem;color:#475569;margin-top:12px">
-            Smart VMS v1.0<br>© 2025 Fedel Solutions Limited
+            Smart VMS v1.0<br>© 2026 Cardstel Solutions Limited
         </div>
         """, unsafe_allow_html=True)
 
@@ -246,7 +246,7 @@ def page_login():
                 <h2 style="color:#1a2744;margin:12px 0 2px;font-size:1.4rem">
                     Staff Login</h2>
                 <p style="color:#64748b;font-size:.85rem;margin:0">
-                    Smart Visitor Management System</p>
+                   Cardstel Visitor Management System</p>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -412,7 +412,7 @@ def page_register():
             full_name = st.text_input("Full Name *", placeholder="e.g. Chidinma Okafor")
             phone     = st.text_input("Phone Number *", placeholder="e.g. 08012345678")
             gender    = st.selectbox("Gender",
-                        ["", "Male", "Female", "Prefer not to say"])
+                        ["", "Male", "Female"])
         with c2:
             email   = st.text_input("Email Address", placeholder="visitor@example.com")
             company = st.text_input("Company / Organisation",
