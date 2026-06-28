@@ -173,7 +173,7 @@ def render_sidebar():
         st.markdown(f"""
         <div style="text-align:center;padding:16px 0 8px">
             {LOGO_SVG}
-            <div style="font-size:.4rem;font-weight:700;color:white;margin-top:8px;
+            <div style="font-size:.6rem;font-weight:700;color:white;margin-top:8px;
                         letter-spacing:.02em">CARDSTEL</div>
             <div style="font-size:.6rem;color:#94a3b8;letter-spacing:.08em">
                 VISITOR MANAGEMENT SYSTEM
