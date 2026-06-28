@@ -33,7 +33,7 @@ LOGO_IMG_TAG = f'<img src="data:image/png;base64,{_LOGO_B64}" style="width:110px
 LOGO_SVG = LOGO_IMG_TAG
 
 st.set_page_config(
-    page_title="Fedel Solutions — Smart VMS",
+    page_title="Cardstel Solutions Limited — VMS",
     page_icon="🏢",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -173,7 +173,7 @@ def render_sidebar():
         st.markdown(f"""
         <div style="text-align:center;padding:16px 0 8px">
             {LOGO_SVG}
-            <div style="font-size:.100rem;font-weight:700;color:white;margin-top:8px;
+            <div style="font-size:.4rem;font-weight:700;color:white;margin-top:8px;
                         letter-spacing:.02em">CARDSTEL</div>
             <div style="font-size:.6rem;color:#94a3b8;letter-spacing:.08em">
                 VISITOR MANAGEMENT SYSTEM
