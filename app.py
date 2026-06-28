@@ -1,6 +1,6 @@
 """
 Smart Visitor Entry & Exit Management System
-Fedel Solutions Limited
+Solutions Limited
 ============================================
 Run with: streamlit run app.py
 """
@@ -174,7 +174,7 @@ def render_sidebar():
         <div style="text-align:center;padding:16px 0 8px">
             {LOGO_SVG}
             <div style="font-size:.75rem;font-weight:700;color:white;margin-top:8px;
-                        letter-spacing:.02em">Emevine</div>
+                        letter-spacing:.02em">Cardstel</div>
             <div style="font-size:.6rem;color:#94a3b8;letter-spacing:.08em">
                 VISITOR MANAGEMENT SYSTEM
             </div>
@@ -277,42 +277,6 @@ def page_login():
                 else:
                     st.error("❌ Invalid credentials. Please try again.")
                     db.log_audit(username, "FAILED_LOGIN", "Invalid credentials")
-
-        # Login reference card
-        st.markdown("""
-        <div style="margin-top:16px;padding:14px 16px;background:#f8fafc;
-                    border-radius:10px;border:1px solid #e2e8f0">
-            <div style="font-size:.75rem;font-weight:700;color:#1a2744;
-                        margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">
-                Login Credentials
-            </div>
-            <table style="width:100%;font-size:.78rem;border-collapse:collapse">
-                <tr style="border-bottom:1px solid #e2e8f0">
-                    <td style="padding:4px 0;color:#64748b;width:90px">Super Admin</td>
-                    <td style="color:#1a2744"><code>superadmin</code> /
-                        <code>SuperAdmin@123</code></td>
-                </tr>
-                <tr style="border-bottom:1px solid #e2e8f0">
-                    <td style="padding:4px 0;color:#64748b">Admin</td>
-                    <td style="color:#1a2744"><code>admin</code> /
-                        <code>Admin@123</code></td>
-                </tr>
-                <tr style="border-bottom:1px solid #e2e8f0">
-                    <td style="padding:4px 0;color:#64748b">CISO</td>
-                    <td style="color:#1a2744"><code>ciso</code> /
-                        <code>CISO@Fedel2025</code></td>
-                </tr>
-                <tr>
-                    <td style="padding:4px 0;color:#64748b">Security</td>
-                    <td style="color:#1a2744"><code>security</code> /
-                        <code>Security@123</code></td>
-                </tr>
-            </table>
-            <div style="font-size:.7rem;color:#94a3b8;margin-top:8px">
-                ℹ️ Passwords are permanent and never expire.
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
 
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
@@ -581,7 +545,7 @@ def page_dashboard():
 
     stats     = db.get_dashboard_stats()
     today_str = lagos_now().strftime("%A, %d %B %Y")
-    st.caption(f"📅 {today_str} (WAT)  •  Fedel Solutions Limited")
+    st.caption(f"📅 {today_str} (WAT)  •  Cardstel Solutions Limited")
 
     cols = st.columns(6)
     cards = [
